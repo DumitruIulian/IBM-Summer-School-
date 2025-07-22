@@ -34,7 +34,7 @@ public class BookServiceJPA {
 
         return mapper.convertValue(bookRepositoryJPA.save(book), BookDTO.class);
     }
-
+    // test git
     public Optional<Book> getRandomBook() {
         List<Book> books = bookRepositoryJPA.findAll();
         if (books.isEmpty()) {
